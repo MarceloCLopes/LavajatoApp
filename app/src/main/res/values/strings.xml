@@ -3,8 +3,16 @@
 
     <!-- MenuFragment -->
     <string name="lucro">Lucro</string>
-    <string name="despesa">Despesa</string>
-
+    <string name="despesa">Despesas</string>
+    <string name="dia">Dia</string>
+    <string name="sem">Sem</string>
+    <string name="mes">Mês</string>
+    <string name="funcionarios">Funcionários</string>
+    <string name="serv_precos">Serv. Preços</string>
+    <string name="serv_agendados">Agendados</string>
+    <string name="valor">4</string>
+    <string name="relatorio">Relatorio</string>
+    <string name="historico">Historico</string>
 
     <!-- ServicePriceFragment -->
     <string name="services">Serviços</string>
@@ -16,4 +24,5 @@
     <string name="button_add">Gravar</string>
     <string name="title_list">Lista de Serviços e Preços</string>
     <string name="service_price_title">SERVIÇOS E PREÇOS</string>
+
 </resources>
