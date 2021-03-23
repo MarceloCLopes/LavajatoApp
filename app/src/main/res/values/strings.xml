@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">Lavajato App</string>
+
+    <!-- MenuFragment -->
+    <string name="lucro">Lucro</string>
+    <string name="despesa">Despesa</string>
+
+
+    <!-- ServicePriceFragment -->
+    <string name="services">Serviços</string>
+    <string name="porte_automovel">Porte do Automóvel:</string>
+    <string name="medio">Médio</string>
+    <string name="grande">Grande</string>
+    <string name="moto">Moto</string>
+    <string name="symbol">R$</string>
+    <string name="button_add">Gravar</string>
+    <string name="title_list">Lista de Serviços e Preços</string>
+    <string name="service_price_title">SERVIÇOS E PREÇOS</string>
 </resources>
