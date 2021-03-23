@@ -13,6 +13,8 @@
     <string name="valor">4</string>
     <string name="relatorio">Relatorio</string>
     <string name="historico">Historico</string>
+    <string name="user">Marcelo Claro</string>
+    <string name="logout">Logout</string>
 
     <!-- ServicePriceFragment -->
     <string name="services">Serviços</string>
@@ -24,5 +26,6 @@
     <string name="button_add">Gravar</string>
     <string name="title_list">Lista de Serviços e Preços</string>
     <string name="service_price_title">SERVIÇOS E PREÇOS</string>
+
 
 </resources>
