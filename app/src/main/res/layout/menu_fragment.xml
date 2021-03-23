@@ -12,27 +12,27 @@
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="66dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:background="@drawable/painel_grafico"
         android:elevation="14dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@+id/include" />
 
     <TextView
         android:id="@+id/lucro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="210dp"
+        android:layout_marginTop="145dp"
         android:elevation="15dp"
         android:gravity="top"
         android:text="@string/lucro"
-        android:textStyle="bold"
         android:textColor="#05B617"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/viewGrafico" />
 
     <TextView
         android:id="@+id/despesa"
@@ -119,12 +119,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.47" />
+        app:layout_constraintGuide_percent="0.45" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnDespesa"
         android:layout_width="117dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:background="@drawable/custom_button_black"
         android:drawableTop="@drawable/ic_despesas"
         android:elevation="2dp"
@@ -140,6 +141,7 @@
         android:id="@+id/btnLucro"
         android:layout_width="117dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:background="@drawable/custom_button_brown"
         android:drawableTop="@drawable/ic_lucro"
         android:elevation="2dp"
@@ -155,6 +157,7 @@
         android:id="@+id/btnFuncionario"
         android:layout_width="117dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:background="@drawable/custom_button_black"
         android:drawableTop="@drawable/ic_funcionarios"
         android:elevation="2dp"
@@ -259,4 +262,8 @@
         app:backgroundTint="@null"
         app:layout_constraintStart_toStartOf="@+id/guideline3"
         app:layout_constraintTop_toBottomOf="@+id/btnEntradaVeiculo" />
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/nav_header_main" />
 </androidx.constraintlayout.widget.ConstraintLayout>
