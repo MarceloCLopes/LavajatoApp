@@ -48,7 +48,215 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lucro" />
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnDia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button_grafico"
+        android:elevation="12dp"
+        android:padding="0dp"
+        android:text="@string/dia"
+        android:textAllCaps="false"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toBottomOf="@+id/viewGrafico" />
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button_grafico"
+        android:elevation="12dp"
+        android:padding="0dp"
+        android:text="@string/sem"
+        android:textAllCaps="false"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/viewGrafico" />
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnMes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button_grafico"
+        android:elevation="12dp"
+        android:padding="0dp"
+        android:text="@string/mes"
+        android:textAllCaps="false"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/viewGrafico" />
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.04"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.36" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.68" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.47" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnDespesa"
+        android:layout_width="117dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button_black"
+        android:drawableTop="@drawable/ic_despesas"
+        android:elevation="2dp"
+        android:gravity="bottom|center_horizontal"
+        android:text="@string/despesa"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        app:backgroundTint="@null"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toTopOf="@+id/guideline4" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnLucro"
+        android:layout_width="117dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button_brown"
+        android:drawableTop="@drawable/ic_lucro"
+        android:elevation="2dp"
+        android:gravity="bottom|center_horizontal"
+        android:text="@string/lucro"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        app:backgroundTint="@null"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/guideline4" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnFuncionario"
+        android:layout_width="117dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button_black"
+        android:drawableTop="@drawable/ic_funcionarios"
+        android:elevation="2dp"
+        android:gravity="bottom"
+        android:text="@string/funcionarios"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        app:backgroundTint="@null"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="@+id/guideline4" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnServPreco"
+        android:layout_width="117dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/custom_button_brown"
+        android:drawableTop="@drawable/ic_serv_preco"
+        android:gravity="bottom"
+        android:text="@string/serv_precos"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        app:backgroundTint="@null"
+        app:elevation="2dp"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toBottomOf="@+id/btnDespesa" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnServAgendado"
+        android:layout_width="117dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/custom_button_black"
+        android:drawableTop="@drawable/ic_servico_agendado"
+        android:elevation="2dp"
+        android:gravity="bottom"
+        android:text="@string/serv_agendados"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        app:backgroundTint="@null"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/btnLucro" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnEntradaVeiculo"
+        android:layout_width="117dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/custom_button_brown"
+        android:drawableTop="@drawable/ic_entrada_veiculo"
+        android:elevation="2dp"
+        android:gravity="bottom|center_horizontal"
+        android:text="@string/valor"
+        android:textSize="18sp"
+        app:backgroundTint="@null"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/btnFuncionario" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnRelatorio"
+        android:layout_width="117dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/custom_button_black"
+        android:drawableTop="@drawable/ic_relatorios"
+        android:elevation="2dp"
+        android:gravity="bottom"
+        android:text="@string/relatorio"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        app:backgroundTint="@null"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toBottomOf="@+id/btnServPreco" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnHistorico"
+        android:layout_width="117dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/custom_button_brown"
+        android:drawableTop="@drawable/ic_historico"
+        android:elevation="2dp"
+        android:gravity="bottom|center_horizontal"
+        android:text="@string/historico"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        app:backgroundTint="@null"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/btnServAgendado" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSaidaVeiculo"
+        android:layout_width="117dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/custom_button_black"
+        android:drawableTop="@drawable/ic_saida_veiculo"
+        android:elevation="2dp"
+        android:gravity="bottom|center_horizontal"
+        android:text="@string/valor"
+        android:textSize="16sp"
+        app:backgroundTint="@null"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/btnEntradaVeiculo" />
 </androidx.constraintlayout.widget.ConstraintLayout>
