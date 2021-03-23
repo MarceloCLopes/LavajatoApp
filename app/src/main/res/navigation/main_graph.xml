@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<navigation xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/main_graph">
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/menuFragment">
 
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.mcl.lavajatoapp.ui.menu.MenuFragment"
+        android:label="menu_fragment"
+        tools:layout="@layout/menu_fragment" >
+        <action
+            android:id="@+id/action_menuFragment_to_servicePriceFragment"
+            app:destination="@id/servicePriceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/servicePriceFragment"
+        android:name="com.mcl.lavajatoapp.ui.serviceprice.ServicePriceFragment"
+        android:label="@string/service_price_title"
+        tools:layout="@layout/service_price_fragment" />
 </navigation>
